@@ -1,0 +1,57 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background: $black;
+  color: $white;
+  font-family: $font__primary;
+  font-size: $font__size;
+  font-weight: 400;
+}
+
+a {
+  color: $light-blue;
+  text-decoration: none;
+
+  &:hover {
+    color: $red;
+  }
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.vireo {
+  position: absolute;
+  bottom: 25px;
+  left: 0;
+  text-align: center;
+  width: 100%;
+  @include font-size(4);
+  text-shadow: 5px 5px 20px rgba($white, 0.4),
+              -5px -5px 20px rgba($white, 0.4);
+
+  span {
+    font-weight: 100;
+  }
+
+}
+
+
+
+#pixie {
+    position:fixed;
+    width:100%;
+    height:100%;
+}

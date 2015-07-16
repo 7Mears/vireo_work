@@ -1,0 +1,57 @@
+.home-content {
+  background: url("./img/backgrounds/one.jpg") no-repeat center center;
+  background-size: cover;
+  height: 100vh;
+
+  ul {
+    list-style-type: none;
+    z-index: 20;
+    position: relative;
+
+    &:first-child {
+      border-bottom: 2px solid $green;
+    }
+
+    &:nth-child(2) {
+      border-bottom: 2px solid $deep-orange;
+    }
+
+    &:nth-child(3) {
+      border-bottom: 2px solid $yellow;
+    }
+
+    &:nth-child(4) {
+      border-bottom: 2px solid $purple;
+    }
+
+    .fa {
+      margin-right: 10px;
+    }
+
+  }
+
+  li {
+    margin-top: 0.5em;
+  }
+
+  .card {
+    @include rowMachine(4,5%);
+    padding: 2%;
+    float: left;
+    background: rgba($black ,0.9);
+    transition: 0.6s ease;
+
+
+    &:hover {
+      background: rgba($black ,1);
+      box-shadow: 2px 2px 10px rgba(0,0,0,0.8),
+      -2px -2px 10px rgba(0,0,0,0.8);
+    }
+  }
+
+  .list-title {
+    font-family: $font__secondary;
+    font-weight: 400;
+    margin-bottom: 1em;
+  }
+}

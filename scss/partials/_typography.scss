@@ -1,0 +1,22 @@
+@font-face {
+  font-family: 'Avenir';
+  src: url('./fonts/AvenirRegular.otf');
+	font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Avenir';
+  src: url('./fonts/AvenirLight.otf');
+	font-weight: 100;
+}
+
+@font-face {
+  font-family: 'Avenir';
+  src: url('./fonts/AvenirBold.otf');
+	font-weight: 700;
+}
+
+$font__primary: 'Avenir', sans-serif;
+
+$font__secondary: 'Roboto Slab', sans-serif;
+$font__size: 1.2em;
