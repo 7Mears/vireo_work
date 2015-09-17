@@ -1,35 +1,31 @@
 .home-content {
-  background: url("./img/backgrounds/one.jpg") no-repeat center center;
-  background-size: cover;
-  height: 100vh;
 
   .list-title {
     font-family: $font__secondary;
-    font-weight: 400;
+    font-weight: 700;
     margin-bottom: 1em;
-    color: darken($white, 20%);
   }
 
   .bookkeeping {
-    border-bottom: 2px solid $deep-purple;
+    border-top: 2px solid $blue;
     a {
       &:hover {
-        color: $deep-purple;
+        color: $blue;
       }
     }
   }
 
   .project-management {
-    border-bottom: 2px solid $teal;
+    border-top: 2px solid $red;
     a {
       &:hover {
-        color: $teal;
+        color: $red;
       }
     }
   }
 
   .social-media {
-    border-bottom: 2px solid $yellow;
+    border-top: 2px solid $yellow;
     a {
       &:hover {
         color: $yellow;
@@ -38,18 +34,16 @@
   }
 
   .tools {
-    border-bottom: 2px solid $vireo;
+    border-top: 2px solid $green;
     a {
       &:hover {
-        color: $vireo;
+        color: $green;
       }
     }
   }
 
   ul {
     list-style-type: none;
-    z-index: 20;
-    position: relative;
 
     .fa {
       margin-right: 10px;
@@ -62,14 +56,19 @@
   }
 
   .card {
-    @include rowMachine(4,5%);
+    @include rowMachine(4,2%);
     padding: 2%;
     float: left;
-    background: rgba($black ,0.7);
-    transition: 0.4s ease;
+    background: rgba($black, 0.8);
+    margin-top: 5%;
+    border-radius: 5px;
 
-    &:hover {
-      background: rgba($black ,1);
+    @include bp-medium {
+      @include rowMachine(2, 2%);
+    }
+
+    @include bp-small {
+      @include rowMachine(1, 0);
     }
   }
 }
